@@ -1,4 +1,201 @@
-header{
+*{
+
+    margin:0;
+    padding: 0;
+}
+.container{
+    max-width: 100%;
     display: grid;
-    grid-auto-columns: auto ;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4.5fr;
+}
+img{
+  max-width: 100%;
+  max-width: 100%;
+}
+
+.search-logo,
+.notification-logo{
+    height: 30px;
+}
+
+.user-logo-search-nav{
+    height: 50px;
+    width: 50px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.user-logo-about-bar{
+    height: 50px;
+    width: 50px;
+    /* border-radius: 20%; */
+    clip-path: circle(50% at 50% 50%);
+}
+
+.logo-dashboard{
+    height: 40px;
+}
+
+.home-logo,.profile-logo,.message-logo,.history-logo,.tasks-logo
+,.com-logo,.setting-logo,.support-logo,.privacy-logo{
+    height: 40px;
+}
+
+.header{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: .5fr 1fr;
+}
+
+input{
+    width: 500px;
+    height: 20px;
+    border-radius: 9px;
+    background-color: lightgray;
+    border: lightgray;
+    margin-left: 4px;
+}
+
+.search-part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.notification-part{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    align-items: center;
+    margin-right: 5px;
+
+}
+
+.search-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+   
+}
+
+.about-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.greeting{
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+
+button{
+    background-color:#0ea5e9;
+    color: white;
+    border: #0ea5e9;
+    width: 100px;
+    height: 40px;
+    border-radius: 39%;
+    text-align: center;
+    /* display: flex;
+    flex-direction: row; */
+    margin-left: 30px;
+}
+
+.sidebar{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: #0ea5e9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex:0;
+}
+
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    align-items: center;
+    padding-top:10px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+}
+
+.utility-tabs{
+    padding-bottom: 50px;
+}
+
+.home,.profile,.message,.history,.tasks,.communities,.settings,.support,.privacy{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:8px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.text{
+    font-size: 20px;
+}
+.main-content{
+    grid-column: 2/3;
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 60% 40%;
+}
+
+.icons img{
+    height: 20px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.projects{
+    grid-column: 1/2;
+    grid-row:1/2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.cards{
+    background-color: white;
+    border-left: 5px solid #facc15;
+    border-radius: 10px;
+    width: 80%;
+    height: 50%;
+    margin:25px;
+    display: flex;
+    padding-left: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:12px;
+}
+
+.bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    margin:25px;
+    padding: 15px;
+    gap:20px
+}
+
+.bar1,.bar2,.bar3{
+    border-bottom: 1px solid gray;
 }
